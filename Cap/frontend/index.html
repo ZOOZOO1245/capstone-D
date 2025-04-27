@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 웹사이트</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">FEUR</div>
+        <nav>
+            <ul class="category">
+                <li>Home</li>
+                <li>Shop</li>
+                <li>About</li>
+                <li>Cart</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Celebrate Your Natural Beauty</h1>
+            <p>Discover our collection of premium beauty products</p>
+            <button class="shop-now">Shop Now</button>
+        </section>
+        <section id="product-form">
+            <h2>상품 등록</h2>
+            <form id="form">
+                <label for="product-name">상품명:</label>
+                <input type="text" id="product-name" required>
+                
+                <label for="product-price">가격:</label>
+                <input type="number" id="product-price" required>
+                
+                <label for="product-description">설명:</label>
+                <textarea id="product-description" required></textarea>
+                
+                <button type="submit">등록하기</button>
+            </form>
+        </section>
+        <section id="product-list">
+            <h2>등록된 상품</h2>
+            <ul id="products"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
